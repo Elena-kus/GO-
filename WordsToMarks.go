@@ -4,8 +4,8 @@ import "fmt"
 
 func WordsToMarks(s string) int {
 	var sum int
-	for i :=0; i< len(s); i++ {
-		sum += (int(s[i]) - 96);
+	for _,v := range(s) {
+		sum += (int(v) - 96);
 	}
 	return sum
 }
